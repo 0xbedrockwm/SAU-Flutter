@@ -1,3 +1,5 @@
+// ignore_for_file: sort_child_properties_last
+
 import 'package:flutter/material.dart';
 
 class HomeUi extends StatelessWidget {
@@ -23,7 +25,7 @@ class HomeUi extends StatelessWidget {
               height: 320.0,
             ),
             Text(
-              'Build Awsome IoT Apps',
+              'Build Awesome IoT Apps',
               style: TextStyle(
                 fontSize: 28.0,
                 fontWeight: FontWeight.bold,
@@ -45,6 +47,53 @@ class HomeUi extends StatelessWidget {
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                OutlinedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'LOGIN',
+                    style: TextStyle(
+                      color: Colors.black,
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadiusGeometry.circular(8.0),
+                    ),
+                    fixedSize: Size(
+                      150.0,
+                      55.0,
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  width: 20.0,
+                ),
+                ElevatedButton(
+                  onPressed: () {},
+                  child: Text(
+                    'SIGNUP',
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadiusGeometry.circular(8.0),
+                      ),
+                      fixedSize: Size(
+                        150.0,
+                        55.0,
+                      ),
+                      backgroundColor: Colors.black),
+                ),
+              ],
             ),
           ],
         ),
