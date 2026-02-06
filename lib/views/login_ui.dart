@@ -202,7 +202,7 @@ class _LoginUiState extends State<LoginUi> {
                       ),
                     ),
                   ],
-                )
+                ),
               ],
             ),
           ),
